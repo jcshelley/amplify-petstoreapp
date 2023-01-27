@@ -20,27 +20,27 @@ export default function PetProfile(props) {
   const buttonThreeSixFiveOneTwoSevenZeroFiveOnClick = useDataStoreDeleteAction(
     { id: pet?.id, model: Pet, schema: schema }
   );
-  const buttonThreeSixFiveOneTwoSixEightEightOnClick = useDataStoreUpdateAction(
-    { fields: {}, id: pet?.id, model: Pet, schema: schema }
-  );
   const buttonTwoNineSevenSixSixNineZeroSevenOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
     url: pet?.about,
   });
+  const buttonThreeSixFiveOneTwoSixEightEightOnClick = useDataStoreUpdateAction(
+    { fields: {}, id: pet?.id, model: Pet, schema: schema }
+  );
   return (
     <Flex
       gap="24px"
       direction="column"
       width="367px"
-      height="674px"
+      height="550px"
       justifyContent="flex-start"
       alignItems="center"
       overflow="hidden"
       position="relative"
       borderRadius="25px"
       padding="24px 24px 24px 24px"
-      backgroundColor="rgba(77,7,119,0.37)"
+      backgroundColor="rgba(77,7,119,0.06)"
       {...getOverrideProps(overrides, "PetProfile")}
       {...rest}
     >
@@ -58,8 +58,8 @@ export default function PetProfile(props) {
         {...getOverrideProps(overrides, "Button36512705")}
       ></Button>
       <Image
-        width="160px"
-        height="160px"
+        width="166px"
+        height="150px"
         display="block"
         gap="unset"
         alignItems="unset"
@@ -210,39 +210,12 @@ export default function PetProfile(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 418")}
       >
-        <Flex
-          gap="10px"
-          direction="column"
-          width="unset"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          position="absolute"
-          top="57px"
-          left="-9.5px"
-          padding="10px 10px 10px 10px"
-          {...getOverrideProps(overrides, "Frame 419")}
-        >
-          <Button
-            width="258px"
-            height="52px"
-            shrink="0"
-            size="large"
-            isDisabled={false}
-            variation="primary"
-            children="Update"
-            onClick={() => {
-              buttonThreeSixFiveOneTwoSixEightEightOnClick();
-            }}
-            {...getOverrideProps(overrides, "Button36512688")}
-          ></Button>
-        </Flex>
         <Button
           width="258px"
-          height="52px"
+          height="31px"
           position="absolute"
           top="0px"
-          left="0px"
+          left="0.5px"
           size="large"
           isDisabled={false}
           variation="primary"
@@ -251,6 +224,21 @@ export default function PetProfile(props) {
             buttonTwoNineSevenSixSixNineZeroSevenOnClick();
           }}
           {...getOverrideProps(overrides, "Button29766907")}
+        ></Button>
+        <Button
+          width="258px"
+          height="30px"
+          position="absolute"
+          top="40px"
+          left="0.5px"
+          size="large"
+          isDisabled={false}
+          variation="primary"
+          children="Update"
+          onClick={() => {
+            buttonThreeSixFiveOneTwoSixEightEightOnClick();
+          }}
+          {...getOverrideProps(overrides, "Button36512688")}
         ></Button>
       </View>
     </Flex>

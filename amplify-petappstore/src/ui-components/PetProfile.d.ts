@@ -21,9 +21,8 @@ export declare type PetProfileOverridesProps = {
     Name36512702?: PrimitiveOverrideProps<FlexProps>;
     "Age: 2"?: PrimitiveOverrideProps<TextProps>;
     "Frame 418"?: PrimitiveOverrideProps<ViewProps>;
-    "Frame 419"?: PrimitiveOverrideProps<FlexProps>;
-    Button36512688?: PrimitiveOverrideProps<ButtonProps>;
     Button29766907?: PrimitiveOverrideProps<ButtonProps>;
+    Button36512688?: PrimitiveOverrideProps<ButtonProps>;
 } & EscapeHatchProps;
 export declare type PetProfileProps = React.PropsWithChildren<Partial<FlexProps> & {
     pet?: Pet;
