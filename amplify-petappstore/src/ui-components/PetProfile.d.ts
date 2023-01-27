@@ -7,15 +7,23 @@
 import * as React from "react";
 import { Pet } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ButtonProps, FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
+import { ButtonProps, FlexProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type PetProfileOverridesProps = {
     PetProfile?: PrimitiveOverrideProps<FlexProps>;
+    Button36512705?: PrimitiveOverrideProps<ButtonProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
-    Name?: PrimitiveOverrideProps<FlexProps>;
+    Name29766901?: PrimitiveOverrideProps<FlexProps>;
     "Melinda Marcus"?: PrimitiveOverrideProps<TextProps>;
-    "Design Engineer at Cloth Studios"?: PrimitiveOverrideProps<TextProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
+    Breed?: PrimitiveOverrideProps<TextProps>;
+    Name36512699?: PrimitiveOverrideProps<FlexProps>;
+    "About: Great Animal"?: PrimitiveOverrideProps<TextProps>;
+    Name36512702?: PrimitiveOverrideProps<FlexProps>;
+    "Age: 2"?: PrimitiveOverrideProps<TextProps>;
+    "Frame 418"?: PrimitiveOverrideProps<ViewProps>;
+    "Frame 419"?: PrimitiveOverrideProps<FlexProps>;
+    Button36512688?: PrimitiveOverrideProps<ButtonProps>;
+    Button29766907?: PrimitiveOverrideProps<ButtonProps>;
 } & EscapeHatchProps;
 export declare type PetProfileProps = React.PropsWithChildren<Partial<FlexProps> & {
     pet?: Pet;
